@@ -32,4 +32,12 @@ public class FindWordInArrayTest {
         Position positions = findWordInArray.find(word, arrayWithWord);
         Assertions.assertTrue(positions.isSamePosition(5, 9));
     }
+
+    @Test
+    public void position_word_carro_in_array_Should_be_0_and_0() {
+        String word = "carro";
+        Character[] arrayWithWord = new Character[]{'a', 'd', 'r', 'f', 'g', 'c', 'a', 'r', 'r'};
+        Position positions = findWordInArray.find(word, arrayWithWord);
+        Assertions.assertTrue(positions.isSamePosition(0, 0));
+    }
 }
