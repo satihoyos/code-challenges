@@ -28,7 +28,7 @@ public class FindWordInArray {
 
                     Character charArry = arrayWithWord[j];
                     Character charWord = wordAsCharArray[positionInWord++];
-                    if(!(charArry.compareTo(charWord) == 0)){
+                    if(!(charArry.equals(charWord))){
                         break;
                     }
 
