@@ -22,7 +22,7 @@ public class FindWordInArrayTest {
         String word = "carro";
         Character[] arrayWithWord = new Character[]{'a', 'b', 'f','c','c', 'a', 'r', 'r', 'o', 'a', 'd', 'r', 'f'};
         Position positions = findWordInArray.find(word, arrayWithWord);
-        Assertions.assertTrue(positions.isSamePosition(0, 4));
+        Assertions.assertTrue(positions.isSamePosition(4, 8));
     }
 
     @Test
