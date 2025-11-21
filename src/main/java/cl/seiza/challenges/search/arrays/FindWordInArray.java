@@ -4,6 +4,6 @@ import cl.seiza.challenges.search.arrays.domain.Position;
 
 public class FindWordInArray {
     public Position find(String word, Character[] arrayWithWord) {
-        return new Position(0, 0);
+        return new Position(-1, -1);
     }
 }
