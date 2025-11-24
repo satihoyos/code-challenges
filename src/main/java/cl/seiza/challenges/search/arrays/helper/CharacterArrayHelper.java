@@ -28,4 +28,10 @@ public class CharacterArrayHelper {
 
         return Boolean.TRUE;
     }
+
+    public Character[] getSubArray(Character[] arrayWithWord, int SubArrayInitPos, int sizeSubArray) {
+        Character[] subArray = new Character[sizeSubArray];
+        System.arraycopy(arrayWithWord, SubArrayInitPos, subArray, 0, sizeSubArray);
+        return subArray;
+    }
 }
